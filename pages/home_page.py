@@ -5,7 +5,7 @@ from utils.logger import get_logger
 class HomePage:
     def __init__(self, page: Page) -> None:
         self.page = page
-        self.heading = page.locator("h1")
+        self.heading = page.locator(".login_logo")
         self.logger = get_logger(self.__class__.__name__)
 
     def navigate(self, base_url: str) -> None:
