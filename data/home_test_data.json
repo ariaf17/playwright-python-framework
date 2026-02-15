@@ -1,6 +1,5 @@
 [
   {
-    "url": "https://example.com/",
     "expected_title": "Example Domain",
     "expected_heading": "Example Domain"
   }
