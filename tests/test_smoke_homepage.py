@@ -11,8 +11,9 @@ test_data = load_test_data("home_test_data.json")
 
 @pytest.mark.smoke
 @pytest.mark.parametrize("case", test_data)
-def test_homepage_title(page, case):
+def test_homepage_title(page, base_url, case):
     home = HomePage(page)
-    home.navigate(case["url"])
-    home.assert_title()
-    home.assert_heading()
+    home.navigate(base_url)
+    home.assert_title(case["expected_title"])
+    home.assert_heading(case["expected_heading"])
+
