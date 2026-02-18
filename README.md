@@ -1,3 +1,6 @@
+![Playwright Tests](https://github.com/ariaf17/playwright-python-framework/actions/workflows/tests.yml/badge.svg)
+
+
 # playwright-python-framework
 End-to-end test automation framework using Playwright + Pytest
 
